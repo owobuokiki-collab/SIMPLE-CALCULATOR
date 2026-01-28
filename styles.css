@@ -64,6 +64,9 @@ button{
   color: white;
   font-size: 1.5rem;                     
   cursor: pointer;
+   outline: none;                 /* removes focus outline */
+  box-shadow: none;              /* removes outer glow */
+  -webkit-tap-highlight-color: transparent; /* removes tap highlight */
 }
 
 /* Button hover effect */
