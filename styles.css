@@ -1,0 +1,131 @@
+/* Main calculator container */
+#calculator{
+  font-family: arial, sans-serif;        
+  background-color: #2a292e;             
+  border-radius: 5px;                    
+  max-width: 500px;                      
+  overflow: hidden;                     
+}
+
+/* Page wrapper to center calculator */
+.container {
+  min-height: 100vh;                     
+  display: flex;                         
+  justify-content: center;               
+  align-items: center;                   
+  background: white;                     
+  margin: 0;
+}
+
+/* Backspace button styling */
+.backspace-btn{
+  font-size: 1rem;
+}
+
+/* Backspace icon image */
+.backspace-btn img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(80);                
+}
+
+/* Click effect for backspace */
+.backspace-btn:active {
+  transform: scale(0.95);                
+}
+
+/* Calculator display input */
+#display{
+  width: 68%;                            /* Width of display */
+  height: 5px;                           /* Small height (padding adds size) */
+  padding: 25px;                         /* Inner spacing */
+  background-color: #3A3F77;             /* Display background */
+  color: white;                          /* Text color */
+  border-radius: 20px;                   /* Rounded display */
+  border: none;                          /* Remove border */
+  margin-top: 25px;
+  margin-inline-start: 20px;             /* Space from left */
+}
+
+/* Buttons grid layout */
+#buttons{
+  display: grid;                         
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 10px;                             
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* General button styling */
+button{
+  border-radius: 50px;                   
+  border: none;
+  background-color: #404258;             
+  color: white;
+  font-size: 1.5rem;                     
+  cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover{
+  background-color: #56607e;
+  
+}
+
+/* Button click effect */
+button:active{
+  background-color: #5f6ea0;
+}
+
+/* Operator buttons (+, -, x, /, etc.) */
+.operator-btn{
+  background-color: orange;
+  border-radius: 50%;
+
+                     
+}
+
+/* Operator hover effect */
+.operator-btn:hover{
+  background-color: rgb(218, 143, 4);
+  
+}
+
+/* Operator click effect */
+.operator-btn:active{
+  background-color: rgb(233, 196, 129);
+}
+
+/* Equal (=) button */
+.btn{
+  background-color: gray;
+  color: white;
+  border-radius: 50%;
+  
+}
+
+/* History panel container */
+#history {
+  width: 256px;
+  border: 2px solid #2a292e;
+  border-radius: 10px;
+  padding: 10px;
+  height: 100px;
+  overflow-y: auto;                      
+  background-color: #2a292e;
+  color: white;
+}
+
+/* History title */
+#history h3 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Each history entry */
+#history p {
+  margin: 5px 0;
+  font-size: 1rem;
+  border-bottom: 1px dashed #aaa;        
+  padding-bottom: 2px;
+}
