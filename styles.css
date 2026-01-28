@@ -79,6 +79,9 @@ button:hover{
 button:active{
   background-color: #5f6ea0;
 }
+button:focus-visible{
+  outline:none;
+}
 
 /* Operator buttons (+, -, x, /, etc.) */
 .operator-btn{
